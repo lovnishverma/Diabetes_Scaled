@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+  }
+  .card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: darkgreen;
+  }
+  .result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: darkblue;
+  }
+</style>
+
+<div class="card">
+  <h2>Diabetes Prediction</h2>
+  <form action="/predict" method="post">
+    <label>Pregnancies</label>
+    <input type="number" name="Pregnancies" placeholder="Enter Pregnancies" required>
+
+    <label>Glucose</label>
+    <input type="number" name="Glucose" placeholder="Enter Glucose" required>
+
+    <label>Blood Pressure</label>
+    <input type="number" name="BloodPressure" placeholder="Enter Blood Pressure" required>
+
+    <label>Skin Thickness</label>
+    <input type="number" name="SkinThickness" placeholder="Enter Skin Thickness" required>
+
+    <label>Insulin</label>
+    <input type="number" name="Insulin" placeholder="Enter Insulin" required>
+
+    <label>BMI</label>
+    <input type="text" name="BMI" placeholder="Enter BMI" required>
+
+    <label>Diabetes Pedigree Function</label>
+    <input type="text" name="DiabetesPedigreeFunction" placeholder="Enter Diabetes Pedigree Function" required>
+
+    <label>Age</label>
+    <input type="number" name="Age" placeholder="Enter Age" required>
+
+    <button type="submit">Predict Diabetes</button>
+  </form>
+
+  {% if result %}
+  <div class="result">{{ result }}</div>
+  {% endif %}
+</div>
+{% endblock %}
