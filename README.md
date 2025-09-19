@@ -1,16 +1,3 @@
----
-title: Diabetesindiaai
-emoji: 📊
-colorFrom: red
-colorTo: indigo
-sdk: docker
-pinned: false
-license: mit
----
-
-
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
-
 # 🩺 Diabetes Prediction Web Application
 
 A machine learning-powered web application that predicts diabetes risk based on medical parameters. Built with Flask, scikit-learn, and deployed on Hugging Face Spaces.
@@ -40,6 +27,8 @@ This project implements a diabetes prediction system using the famous **PIMA Ind
 
 ### Key Highlights:
 - ✅ **Beginner-friendly** Flask web application
+- ✅ **No Bootstrap** - Pure HTML/CSS for simplicity
+- ✅ **Template inheritance** using base.html for clean code
 - ✅ **Pre-trained ML model** saved using joblib
 - ✅ **Real-time predictions** with confidence scores
 - ✅ **Responsive web interface** with time-based greetings
@@ -51,6 +40,8 @@ This project implements a diabetes prediction system using the famous **PIMA Ind
 - **Time-based Greetings**: Dynamic greetings based on Indian Standard Time (IST)
 - **Real-time Predictions**: Instant diabetes risk assessment
 - **Confidence Scores**: Probability percentages for predictions
+- **Simple & Clean Design**: No Bootstrap - pure HTML/CSS for better learning
+- **Template Inheritance**: Uses Flask's Jinja2 templating with base.html
 - **Mobile Responsive**: Works seamlessly on all devices
 - **Error Handling**: Robust input validation and error management
 
@@ -161,6 +152,13 @@ This project uses the **PIMA Indians Diabetes Dataset**, which contains medical 
 The machine learning model was trained using the process documented in this Jupyter notebook:
 📓 **[Model Training Notebook](https://github.com/lovnishverma/Python-Getting-Started/blob/main/PIMA_Indians_Diabetes_Classification.ipynb)**
 
+### Design Philosophy
+This project follows a **beginner-friendly approach**:
+- **No CSS frameworks** like Bootstrap to keep the code simple and understandable
+- **Pure HTML/CSS** so beginners can learn fundamental web development concepts
+- **Template inheritance** using `base.html` to demonstrate Flask's Jinja2 templating
+- **Clean, readable code** with extensive comments for learning purposes
+
 ### Model Pipeline
 1. **Data Preprocessing**: StandardScaler for feature normalization
 2. **Model Training**: Classification algorithm (details in training notebook)
@@ -265,11 +263,12 @@ Contributions are welcome! Here's how you can help:
 6. **Open a Pull Request**
 
 ### Areas for Contribution
-- 🎨 Improve UI/UX design
-- 📱 Add mobile responsiveness
+- 🎨 Improve UI/UX design (keeping it simple and framework-free)
+- 📱 Enhance mobile responsiveness with pure CSS
 - 🔍 Add data visualization
 - 🧪 Improve model accuracy
-- 📚 Add more documentation
+- 📚 Add more documentation and code comments
+- 🎓 Create beginner tutorials
 - 🐛 Fix bugs and issues
 
 ## 📄 License
