@@ -54,11 +54,13 @@ This project implements a diabetes prediction system using the famous **PIMA Ind
 📄 **[Hugging Face Space](https://huggingface.co/spaces/LovnishVerma/diabetes-prediction-joblib)**
 
 ### Screenshots
-*Note: Add screenshots of your application here*
+
+<img width="1902" height="1078" alt="image" src="https://github.com/user-attachments/assets/e19fa271-8990-4cb5-b548-2ab6d3d40d4e" />
+
 
 ## 📊 Dataset
 
-This project uses the **PIMA Indians Diabetes Dataset**, which contains medical information about Pima Indian women and their diabetes status.
+This project uses the **PIMA Indians Diabetes Dataset**, [View Raw](https://raw.githubusercontent.com/lovnishverma/datasets/refs/heads/main/diabetes_new.csv) which contains medical information about Pima Indian women and their diabetes status.
 
 ### Features Used:
 1. **Pregnancies**: Number of times pregnant
@@ -314,3 +316,4 @@ If you have any questions or need help:
 ---
 
 *Last updated: September 2025*
+
